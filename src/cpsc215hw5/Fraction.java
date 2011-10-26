@@ -116,7 +116,6 @@ public class Fraction {
         doubleEnd   = end.approximate();
         doubleThis  = this.approximate();
 
-
         return (doubleStart <= doubleThis && doubleEnd >= doubleThis);
     }
 
@@ -125,7 +124,7 @@ public class Fraction {
     }
 
     /**
-     * <p>Returns true if and only if the given object is a
+     * <p>Returns true <strong>iff</strong> the given object is a
      * <code>Fraction</code> that equals this one.</p>
      */
     @Override

@@ -15,17 +15,14 @@ public class Main {
      */
     public static void main(String[] args) {
 
-
         try {
+
             Fraction start = new Fraction(1,4);
             start.printFraction();
-
             Fraction end = new Fraction(3,4);
-            
-            Fraction test = new Fraction(4,5);
-            
-            System.out.println(test.fallsBetween(start, end));
+            Fraction test = new Fraction(1000,2000);
 
+            System.out.println(test.fallsBetween(start, end));
 
         } catch (IllegalArgumentException iae) {
             System.err.println("Cannot divide by 0.");
